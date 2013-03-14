@@ -1,0 +1,68 @@
+<html>
+<head>
+    <!-- You reference the resources with qrc:/ -->
+    <!-- JavaScript includes -->
+    <!-- jQuery http://jquery.com/ -->
+    <script type="text/javascript" src="qrc:/Resources/jquery.js" />
+    <!-- slot -->
+    <script type="text/javascript" src="qrc:/Resources/slot.js" />
+    </head>
+    <title>Test Webkit and javaScript</title>
+<body>
+<h1>
+The Green People Book Club
+</h1>
+
+<p>
+Welcome to The Green People Book Club. Please register to obtain a membership with us.
+</p>
+    <form>
+    <table>
+    <tbody><tr>
+        <td>
+        First name:
+        </td>
+        <td>
+            <input type="text" id="firstname">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        Last name:
+        </td>
+        <td>
+            <input type="text" id="lastname">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        Gender:
+        </td>
+        <td>
+        <input type="radio" name="gender" id="genderMale" value="Male"> Male
+        <input type="radio" name="gender" id="genderFemale" value="Female"> Female
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <input type="checkbox" id="updates" value="receive">
+        Check here if you would like to receive regular updates from us:
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <img id="preview_img" name="preview_img" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <a href="javascript:void(0)" onclick="upLoad()">upload</a>
+        <a href="javascript:void(0)" onclick="previewImg()">preview</a>
+        </td>
+    </tr>
+    
+    </tbody></table>
+    <input type="button" value="Submit" onclick="submitThis()">
+    </form>
+
+</body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http:/./.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0047)http://layout.jquery-dev.net/demos/complex.html -->
+<html xmlns="http:/./.w3.org/1999/xhtml" style="overflow: hidden; height: 100%; border: none; padding: 0px; margin: 0px; "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="language" content="en">
+
+	<title>Speech Pedestrian Navigation@PITT</title>
+
+	<!-- DEMO styles - specific to this page -->
+	<link rel="stylesheet" type="text/css" href="./complex.css">
+		<link rel="stylesheet" type="text/css" href="./jquery.mobile-1.2.0.min.css">
+	<!--[if lte IE 7]>
+		<style type="text/css"> body { font-size: 85%; } </style>
+	<![endif]-->
+
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCRcNhokpGv4gTSOjbnMB4tm8anY2IiCDQ&sensor=false"></script>
+	<script type="text/javascript" src="./jquery-latest.js"></script>
+	<script type="text/javascript" src="./jquery-ui-latest.js"></script>
+	<script type="text/javascript" src="./jquery.layout-latest.js"></script>
+	<script type="text/javascript" src="./complex.js"></script>
+	<script type="text/javascript" src="./debug.js"></script>
+	
+	<script type="text/javascript">
+		
+	</script>
+
+</head>
+<body>
+
+<div class="ui-layout-north">
+	<div class="header">Speech Pedestrian Navigation System of PITT Campus - Interactive System Design</div>
+	<div class="content">
+		<span style="color:grey">In the applicaiton, users can input source and destination address by Voice Commands.
+		The Navigation System is designed for the main buildings in PITT Campus. <br>After you speak building names of 
+		source and destination, and then saying command "Get Path" can give you the routes.
+		<br>Commands: SET DESTINATION/SET SOURCE/GET PATH/START ROUTE/END ROUTE
+		</span>
+	</div>
+</div>
+
+<div class="ui-layout-center content">
+	<div class="ui-layout-content">
+		<div id="map_canvas" style="width:100%;height:100%"></div>		
+	</div>
+	
+	<div class="footer">
+		<span>Debug Console</span><div id="unrecognized_speech"></div>	
+	</div>
+
+</div>
+
+<!--
+	=======================
+	*	TABLE OF CONTENTS  *
+	=======================
+-->
+<div class="ui-layout-west" style="display: none;">
+	<div class="ui-layout-content">
+		
+		<div id="TaskHost_DrivingDirections" class="VETask" style="">
+			<div id="TaskHost_DrivingDirections_LPanel" class="MicrosoftMap dd_directionsPanel landing noprint dd_routeModeCar">
+				<div id="TaskHost_DrivingDirectionsWaypointContainer1" class="waypointContainer firstWaypoint" waypointuniqueid="1" style="z-index: 400; ">
+					<span id="TaskHost_DrivingDirectionsLandingLetter1" class="dd_directionStepLetter">
+						A
+					</span>
+					<div id="TaskHost_DrivingDirectionsbasicWrapper1" class="sw_b ddInput" style="position: static; ">
+						<input id="route_source" class="sw_qbox ddInputBox" type="text" waypointuniqueid="1" title="Business, address, or landmark" autocomplete="off" />
+						<span id="src_bldg_name" style="color:lightgrey">Speak a Building Name of PITT. Command: set source</span>
+					</div>
+				</div>
+				<div id="TaskHost_DrivingDirectionsWaypointContainer2" class="waypointContainer dd_lastWaypoint" waypointuniqueid="2" style="z-index: 399; ">
+					<span id="TaskHost_DrivingDirectionsLandingLetter1" class="dd_directionStepLetter" style="color:#390;">
+						B
+					</span>
+					<div id="TaskHost_DrivingDirectionsbasicWrapper2" class="sw_b ddInput" style="position: static; ">
+						<input id="route_destination" class="sw_qbox ddInputBox Watermark" type="text" waypointuniqueid="2" title="Business, address, or landmark" autocomplete="off" />
+						<span id="dst_bldg_name" style="color:lightgrey">Speak a Building Name of PITT. Command: set destination</span>
+					</div>
+				</div>
+				<div id="TaskHost_DrivingDirectionsButtonPanel" class="buttonPanel">
+					<input id="clear_addr" class="button higButton secondary" type="button" value="Clear" impressionguid="e65d4d4f593847a5b5c0ba194ec6e74b" />
+					<input id="get_direction" class="button goButton" type="button" value="Go" impressionguid="e65d4d4f593847a5b5c0ba194ec6e74b" />
+				</div>
+			</div>
+		</div>
+	
+		<div id="help_info_panel" style="width:100%"></div>
+		<div id="directions_panel" style="width:100%"></div>
+	</div>
+</div>
+
+
+</body></html>

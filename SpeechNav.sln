@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpeechNav", "SpeechNav.vcproj", "{D39273FA-1D10-4EFB-A45A-B00A0C5B6DA2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QsLog", "QsLog\QsLog.vcproj", "{04765ADA-92A5-4CA5-AFC6-CFE087729B7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D39273FA-1D10-4EFB-A45A-B00A0C5B6DA2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D39273FA-1D10-4EFB-A45A-B00A0C5B6DA2}.Debug|Win32.Build.0 = Debug|Win32
+		{D39273FA-1D10-4EFB-A45A-B00A0C5B6DA2}.Release|Win32.ActiveCfg = Release|Win32
+		{D39273FA-1D10-4EFB-A45A-B00A0C5B6DA2}.Release|Win32.Build.0 = Release|Win32
+		{04765ADA-92A5-4CA5-AFC6-CFE087729B7C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{04765ADA-92A5-4CA5-AFC6-CFE087729B7C}.Debug|Win32.Build.0 = Debug|Win32
+		{04765ADA-92A5-4CA5-AFC6-CFE087729B7C}.Release|Win32.ActiveCfg = Release|Win32
+		{04765ADA-92A5-4CA5-AFC6-CFE087729B7C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
